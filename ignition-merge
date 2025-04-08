@@ -1,0 +1,32 @@
+```shell
+cat > my-ignition.ign <<EOF
+{
+  "ignition": {
+    "version": "3.2.0",
+    "config": {
+      "merge": [
+        {
+          "source": "http://192.168.1.198:8080/xxxx.ign"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/hostname",
+        "overwrite": true,
+        "mode": 420,
+        "contents": {
+          "source": "data:,xxxx"
+        }
+      }
+    ]
+  }
+}
+
+EOF
+
+sudo coreos-installer install /dev/sda --copy-network --ignition-file=my-ignition.ign  --insecure-ignition
+
+# plus loin : https://apolymen.medium.com/automating-an-openshift-4-7-install-on-bare-metal-with-static-ips-58d414075e96
