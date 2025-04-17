@@ -61,9 +61,12 @@ oc adm certificate approve  csr-xxx
 ## Some links
 
 - customize node - chrony : https://docs.redhat.com/en/documentation/openshift_container_platform/4.14/html/installation_configuration/installing-customizing#installation-special-config-chrony_installing-customizing
+- https://docs.redhat.com/en/documentation/openshift_container_platform/4.14/html/installation_configuration/installing-customizing#installation-special-config-kmod_installing-customizing
+  
 - https://docs.redhat.com/en/documentation/openshift_container_platform/4.8/html/support/troubleshooting#checking-load-balancer-configuration_troubleshooting-installations
 - https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/nodes/working-with-nodes#adding-node-iso
 - https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/networking/configuring-ipfailover#nw-ipfailover-environment-variables_configuring-ipfailover
+  
 - https://github.com/openshift/installer/blob/main/docs/user/customization.md
 - https://docs.redhat.com/en/documentation/openshift_container_platform/4.14/html/installing_an_on-premise_cluster_with_the_agent-based_installer/installation-config-parameters-agent#agent-configuration-parameters-optional_installation-config-parameters-agent
 - https://docs.redhat.com/en/documentation/openshift_container_platform/4.9/html/installing/deploying-installer-provisioned-clusters-on-bare-metal#configuring-the-install-config-file_ipi-install-installation-workflow
